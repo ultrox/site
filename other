@@ -1,0 +1,31 @@
+clipit actions
+
+echo 'git clone %s' | sed 's/https:\/\//git@/; s#/#:#' |tr -d '\r\n' |xclip
+
+
+# Default arguments powered by obj destructuring
+
+Recently I was looking thrue the code of [dom-testing-libary] and noticed unusual sintax, I understood what it dose but I didn't know what was it.
+I certainly knew about default arguments, but this was very usiful. 
+
+```
+// What exactly happens here?
+function createElement ({
+  content = 'Very default',
+  classNames = ['module-text', 'special']
+} = {}) {
+  // function body
+}
+```
+
+Mostly I was confused by the empty obj at the end. It turns out it's a trick to use config obj optionaly.
+
+Instantly this become my favorite function.
+
+Real world examples could be found here:
+
+
+Sources:
+https://simonsmith.io/destructuring-objects-as-function-parameters-in-es6/
+https://wesbos.com/destructuring-default-values/
+https://www.sitepoint.com/es6-default-parameters/
