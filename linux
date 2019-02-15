@@ -1,0 +1,4 @@
+lsattr & chattr 
+
+`lsattr /path/to/file` 
+`chattr +i /path/to/file` make it immutable. I needed it because I was editing `/etc/resolve.conf` and network service was chaning it on reboot.
