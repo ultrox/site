@@ -29,3 +29,19 @@ Sources:
 https://simonsmith.io/destructuring-objects-as-function-parameters-in-es6/
 https://wesbos.com/destructuring-default-values/
 https://www.sitepoint.com/es6-default-parameters/
+
+
+https://egghead.io/lessons/git-squash-all-of-my-commits-into-a-single-one-and-merge-into-master
+Why you should use --force-with-lease instead of -f when pushing to remote
+
+--force -f will blindly push to origin 
+--force-with-lease will check if someone else pushed to that branch before you
+push, and if yes, it will throw an err
+
+How do you properly merge feature branch to master without poluting with all the
+commits from feature branch
+
+```
+git checkout master
+git merge --squash feature-branch
+```
